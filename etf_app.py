@@ -44,15 +44,13 @@ class Price:
 
 
 my_greet = Greetings(75 * "=", "Ahoj, uživateli. Je čas vyhodnotit včerejší obchodní den indexu S&P 500" )
-my_greet.create_greetings()
-
 my_conditions = Conditions(
     75 * "=",  
     "Jaká je hodnota Williams %R(10):\n",
     75 * "-", 
     "Je Momentum rostoucí? Ano nebo ne.\n"
 )
-my_conditions.create_conditions()
-
 my_price = Price("Jaká je aktuální cena ETF v EUR?\n", "Jaká je tvoje hrubá vážená průměrná cena nákupu tvé aktuální pozice?\n", 75 * "-")
+my_greet.create_greetings()
+my_conditions.create_conditions()
 my_price.price_setup()
